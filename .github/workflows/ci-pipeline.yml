@@ -23,3 +23,7 @@ jobs:
       run: |
         python a.py > result.txt
         cat result.txt
+
+    - name: Build Docker image
+      run: |
+        docker build -t quangnghien/pylint:${{ matrix.python-version }} .
