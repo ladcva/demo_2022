@@ -21,4 +21,5 @@ jobs:
         pip install requests
     - name: Analysing the code with pylint and output text file
       run: |
-        python a.py
+        python a.py > result.txt
+        cat result.txt
