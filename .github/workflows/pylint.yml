@@ -19,7 +19,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install pylint
         pip install requests
-    - name: Analysing the code with pylint and output text file
+    - name: Check xem Quang co nghien ko
       run: |
         python a.py > result.txt
         cat result.txt
